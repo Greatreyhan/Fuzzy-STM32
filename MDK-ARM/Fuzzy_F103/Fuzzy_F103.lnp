@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"fuzzy_f103\startup_stm32f103xb.o"
+"fuzzy_f103\main.o"
+"fuzzy_f103\stm32f1xx_it.o"
+"fuzzy_f103\stm32f1xx_hal_msp.o"
+"fuzzy_f103\fuzzy.o"
+"fuzzy_f103\stm32f1xx_hal_gpio_ex.o"
+"fuzzy_f103\stm32f1xx_hal_tim.o"
+"fuzzy_f103\stm32f1xx_hal_tim_ex.o"
+"fuzzy_f103\stm32f1xx_hal.o"
+"fuzzy_f103\stm32f1xx_hal_rcc.o"
+"fuzzy_f103\stm32f1xx_hal_rcc_ex.o"
+"fuzzy_f103\stm32f1xx_hal_gpio.o"
+"fuzzy_f103\stm32f1xx_hal_dma.o"
+"fuzzy_f103\stm32f1xx_hal_cortex.o"
+"fuzzy_f103\stm32f1xx_hal_pwr.o"
+"fuzzy_f103\stm32f1xx_hal_flash.o"
+"fuzzy_f103\stm32f1xx_hal_flash_ex.o"
+"fuzzy_f103\stm32f1xx_hal_exti.o"
+"fuzzy_f103\system_stm32f1xx.o"
+--strict --scatter "Fuzzy_F103\Fuzzy_F103.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Fuzzy_F103.map" -o Fuzzy_F103\Fuzzy_F103.axf
